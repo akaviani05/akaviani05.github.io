@@ -1,6 +1,8 @@
 const authorUrls = {
     'Masoud Seddighin': 'https://sites.google.com/view/masoudseddighin',
     'MohammadTaghi Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
+    'Mohammad T. Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
+    'Mahdi JafariRaviz': 'https://mahdij.com/'
 };
 
 function linkifyAuthors(authorList) {
@@ -16,10 +18,16 @@ function linkifyAuthors(authorList) {
 }
 
 function createPublication(title, pdfLink, conference, conferenceShort, authorList) {
+    const titleMarkup = pdfLink
+        ? `<a href="${pdfLink}" target="_blank">${title}</a>`
+        : title;
+    const conferenceMarkup = conferenceShort
+        ? ` <span class="conference">(${conferenceShort})</span>`
+        : '';
+
     return `
         <li>
-            <strong><a href="${pdfLink}" target="_blank">${title}</a></strong>
-            <span class="conference">(${conferenceShort})</span><br>
+            <strong>${titleMarkup}</strong>${conferenceMarkup}<br>
             ${linkifyAuthors(authorList)}
         </li>
     `.trim();
