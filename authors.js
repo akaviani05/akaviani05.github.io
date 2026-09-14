@@ -2,7 +2,8 @@ const authorUrls = {
     'Masoud Seddighin': 'https://sites.google.com/view/masoudseddighin',
     'MohammadTaghi Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
     'Mohammad T. Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
-    'Mahdi JafariRaviz': 'https://mahdij.com/'
+    'Mahdi JafariRaviz': 'https://mahdij.com/',
+    'Soheil Mohammadkhani': 'https://sohsoh84.github.io/'
 };
 
 function linkifyAuthors(authorList) {
