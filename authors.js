@@ -3,7 +3,11 @@ const authorUrls = {
     'MohammadTaghi Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
     'Mohammad T. Hajiaghayi': 'https://www.cs.umd.edu/~hajiagha/',
     'Mahdi JafariRaviz': 'https://mahdij.com/',
-    'Soheil Mohammadkhani': 'https://sohsoh84.github.io/'
+    'Soheil Mohammadkhani': 'https://sohsoh84.github.io/',
+    'Iman Gholami': 'https://igholami.com/',
+    'AmirMohammad Shahrezaei': 'https://scholar.google.com/citations?user=5_q0PD8AAAAJ&hl=en&authuser=1',
+    'Alireza Keshavarz': 'https://scholar.google.com/citations?user=DXhuYrEAAAAJ&hl=en&authuser=1',
+    'Ehsan Heidari': 'https://scholar.google.com/citations?user=1shdiFQAAAAJ&hl=en&authuser=1'
 };
 
 function linkifyAuthors(authorList) {
